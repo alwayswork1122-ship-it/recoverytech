@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recovery Techy - Crypto Recovery Services</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Global Dark Theme */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000814;
+      color: #e0e8f0;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #0d2d4d;
+      background: #000814;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header img {
+      height: 40px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 1.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #e0e8f0;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #4da6ff;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #001233, #001845);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #4da6ff;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #cfd8e3;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: #4da6ff;
+      color: #000814;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #1a73e8;
+    }
+
+    /* Services */
+    .services {
+      padding: 3rem 2rem;
+      background: #001233;
+    }
+    .services h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #4da6ff;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: #001845;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid #0d2d4d;
+    }
+    .service-card h3 {
+      color: #4da6ff;
+      margin-bottom: 1rem;
+    }
+    .service-card p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      color: #cfd8e3;
+    }
+
+    /* CTA Section */
+    .cta {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: #000d1a;
+    }
+    .cta h2 {
+      color: #4da6ff;
+      margin-bottom: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #000814;
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid #0d2d4d;
+      font-size: 0.85rem;
+      color: #9fb3c8;
+    }
+    footer a {
+      color: #4da6ff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <a href="index.html">
+        <img src="your-logo.png" alt="Recovery Techy Logo" />
+      </a>
+    </div>
+    <div class="header-right">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="connect.html">Connect Wallet</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Empowering Your Recovery Journey</h1>
+    <p>Trustworthy crypto recovery solutions for Bitcoin, Ethereum, Dogecoin, Solana, Metamask, Trezor, Ledger, and more.</p>
+    <a href="connect.html" class="btn">Get Started</a>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>Our Recovery Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Wallet Recovery</h3>
+        <p>Recover lost passwords from wallet.dat, blockchain.com, MEW, MyCrypto JSON files, and mnemonics.</p>
+      </div>
+      <div class="service-card">
+        <h3>Private Key Recovery</h3>
+        <p>We fix mistyped characters (O vs 0, I vs 1) and rebuild missing key details using custom tools.</p>
+      </div>
+      <div class="service-card">
+        <h3>Mnemonic Phrase Cracking</h3>
+        <p>Recover 12 or 24-word phrases to rebuild wallets and restore access to funds safely.</p>
+      </div>
+      <div class="service-card">
+        <h3>Hardware Wallet Recovery</h3>
+        <p>Lost access to Trezor, Ledger, or phone/computer wallets? Our in-house tools can help.</p>
+      </div>
+      <div class="service-card">
+        <h3>Investment & Romance Scam Recovery</h3>
+        <p>We assist victims of fraud in recovering stolen funds with advanced blockchain tracking.</p>
+      </div>
+      <div class="service-card">
+        <h3>Advanced Recovery Tools</h3>
+        <p>Custom-built hardware, CPU/GPU farms, and ML-optimized tools ensure secure and efficient recovery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Start Your Recovery Today</h2>
+    <p>Fast, secure, and private crypto recovery solutions.</p>
+    <a href="connect.html" class="btn">Report a scam</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Recovery Techy. All Rights Reserved.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="terms.html">Terms of Service</a>
+    </p>
+  </footer>
+  <!-- Add this right before </body> in your existing file -->
+<style>
+    /* Floating Email Button */
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #4da6ff;
+      color: #000814;
+      padding: 0.9rem 1.2rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      text-decoration: none;
+      transition: background 0.3s;
+      z-index: 1000;
+    }
+    .floating-btn:hover {
+      background: #1a73e8;
+    }
+  </style>
+  
+  <a href="mailto:your-email@example.com?subject=Crypto%20Recovery%20Issue&body=Which%20crypto%20problem%20are%20you%20facing%20today%3F"
+     class="floating-btn">
+    📧 Which crypto problem are you facing today?
+  </a>
+  
+</body>
+</html>

